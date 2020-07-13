@@ -3,12 +3,12 @@ Public Sub CopySelectedSheets()
     ActiveWindow.SelectedSheets.Copy Before:=Worksheets("Back Cover Template") 'Copies active sheet to before hard-coded workbook
     
     On Error Resume Next 'Skips error to rename sheet
-    ActiveSheet.Name = "New PRT"
+ActiveSheet.Name = "New Sheet"
 End Sub
     
-
 'Source: https://www.ablebits.com/office-addins-blog/2018/12/05/duplicate-sheet-excel-vba/
 'More options additional to the below are available at the source
+
 
 'Copy sheet to new workbook:
 '   Public Sub CopySheetToNewWorkbook()
